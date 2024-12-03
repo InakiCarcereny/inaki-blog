@@ -4,7 +4,7 @@ import { Zustand } from '../icons/Zustand';
 export function Articles() {
   return (
     <section className="grid grid-cols-2 gap-6 mt-20 max-w-[1000px] w-full mx-auto relative">
-      <article className="w-full rounded-xl border border-white/10 py-4 px-4 h-[250px] flex flex-col justify-between">
+      <article className="w-full rounded-xl border border-white/10 py-4 px-4 h-[250px] flex flex-col justify-between hover:bg-white/10 duration-200">
         <div className="flex flex-col gap-4">
           <header className="flex flex-col gap-1">
             <span className="text-[#a1a1a1] font-semibold text-sm">
@@ -15,7 +15,7 @@ export function Articles() {
             </h2>
           </header>
 
-          <p className="text-white text-sm">
+          <p className="text-white text-sm leading-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus iure voluptatum blanditiis doloribus laborum cum
             aperiam, magnam quasi ratione, inventore totam quae odit
@@ -36,7 +36,7 @@ export function Articles() {
         </footer>
       </article>
 
-      <article className="w-full rounded-xl border border-white/10 py-4 px-4 h-[250px] flex flex-col justify-between">
+      <article className="w-full rounded-xl border border-white/10 py-4 px-4 h-[250px] flex flex-col justify-between hover:bg-white/10 duration-200">
         <div className="flex flex-col gap-4">
           <header className="flex flex-col gap-1">
             <span className="text-[#a1a1a1] font-semibold text-sm">
@@ -47,7 +47,7 @@ export function Articles() {
             </h2>
           </header>
 
-          <p className="text-white text-sm">
+          <p className="text-white text-sm leading-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus iure voluptatum blanditiis doloribus laborum cum
             aperiam, magnam quasi ratione, inventore totam quae odit
