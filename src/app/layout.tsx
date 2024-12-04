@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import { Header } from './components/Header';
 
 export const metadata: Metadata = {
   title: 'Inaki Carcereny | Blog',
@@ -22,7 +23,10 @@ export default function RootLayout({
       <body
         className={`${poppins.className} ${poppins.className} antialiased bg-black`}
       >
-        <main className="w-full h-screen flex flex-col">{children}</main>
+        <main className="w-full h-screen flex flex-col">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );
