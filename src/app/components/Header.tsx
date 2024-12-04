@@ -17,7 +17,7 @@ export function Header() {
             <h1 className="text-white font-semibold text-2xl">InakiDev</h1>
           </a>
 
-          <div className="rounded-full border border-white/10 py-1 px-4 text-sm">
+          <div className="rounded-full border border-white/10 py-1 px-4 text-sm animate-border">
             <h2 className="text-white">Hey, welcome to my blog!</h2>
           </div>
         </div>

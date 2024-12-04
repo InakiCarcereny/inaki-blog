@@ -12,6 +12,7 @@ export function Articles() {
           tags={post.tags}
           description={post.description}
           href={post.href}
+          state={post.new}
         />
       ))}
     </section>
