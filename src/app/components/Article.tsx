@@ -23,7 +23,7 @@ export function Article({
   return (
     <Link
       href={`/article/${href}`}
-      className="w-full rounded-xl border border-white/10 py-4 px-4 h-[265px] flex flex-col justify-between hover:bg-white/10 duration-200"
+      className="w-full rounded-xl border border-white/10 py-4 px-4 h-[265px] flex flex-col justify-between duration-200 hover:shadow-lg hover:shadow-[#3b88e925]"
     >
       <div className="flex flex-col gap-4">
         <header className="flex flex-col gap-1">
@@ -37,7 +37,7 @@ export function Article({
         <p className="text-white text-sm leading-6">{description}</p>
       </div>
 
-      <footer>
+      <footer className="border-t border-white/10 -mx-4 px-4 -my-4 h-[50px] flex items-center">
         <ul className="flex items-center gap-4">
           {tags.map((tag) => (
             <li
