@@ -43,8 +43,7 @@ export const POSTS = [
     href: 'zustand-vs-redux',
     resume:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!.',
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6lf4AZFexY1dKZm9ovT3m0R7AuioL5O4gA&s',
+    image: '/assets/zustand-vs-redux.webp',
     new: true,
   },
 ];

@@ -24,7 +24,11 @@ export default function ArticlePage({
 
           <p className="text-white leading-6 text-base">{post.description}</p>
 
-          {/* <img src={post.image} alt={post.title} /> */}
+          <img
+            src={post.image}
+            alt={post.title}
+            className="rounded-xl w-auto h-full"
+          />
         </article>
       ))}
     </section>
