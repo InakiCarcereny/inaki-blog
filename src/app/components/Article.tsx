@@ -7,23 +7,23 @@ interface ArticleProps {
   title: string;
   date: string;
   tags: Array<(typeof POSTS_BY_TAG)[keyof typeof POSTS_BY_TAG]>;
-  description: string;
   href: string;
   state: boolean;
+  resume: string;
 }
 
 export function Article({
   title,
   date,
   tags,
-  description,
   href,
   state,
+  resume,
 }: ArticleProps) {
   return (
     <Link
       href={`/article/${href}`}
-      className="w-full rounded-xl border border-white/10 py-4 px-4 h-[265px] flex flex-col justify-between duration-200 hover:shadow-lg hover:shadow-[#3b88e925]"
+      className="w-full rounded-xl border border-white/10 py-4 px-4 h-[265px] flex flex-col justify-between duration-200 hover:shadow-lg hover:shadow-white/10"
     >
       <div className="flex flex-col gap-4">
         <header className="flex flex-col gap-1">
@@ -34,7 +34,7 @@ export function Article({
           <h2 className="text-white font-bold text-2xl">{title}</h2>
         </header>
 
-        <p className="text-white text-sm leading-6">{description}</p>
+        <p className="text-white text-sm leading-6">{resume}</p>
       </div>
 
       <footer className="border-t border-white/10 -mx-4 px-4 -my-4 h-[50px] flex items-center">

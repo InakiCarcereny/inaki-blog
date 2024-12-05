@@ -1,7 +1,8 @@
 import { ReactIcon } from '../icons/React';
+import { Redux } from '../icons/Redux';
 import { Zustand } from '../icons/Zustand';
 
-type Tag = 'REACT' | 'ZUSTAND';
+type Tag = 'REACT' | 'ZUSTAND' | 'REDUX';
 
 interface TagProps {
   label: string;
@@ -23,47 +24,27 @@ export const POSTS_BY_TAG: Record<Tag, TagProps> = {
     bg: 'bg-yellow-950',
     text: 'text-yellow-500',
   },
+  REDUX: {
+    label: 'Redux',
+    icon: Redux({ className: 'w-5 h-5' }),
+    bg: 'bg-[#362A4C]',
+    text: 'text-violet-500',
+  },
 };
 
 export const POSTS = [
   {
-    id: 4,
-    title: 'Titulo del articulo',
-    date: 'Dec 3 - 2024',
-    tags: [POSTS_BY_TAG.REACT, POSTS_BY_TAG.ZUSTAND],
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!',
-    href: 'react-zustand-ts',
-    new: true,
-  },
-  {
-    id: 3,
-    title: 'Titulo del articulo',
-    date: 'Dec 3 - 2024',
-    tags: [POSTS_BY_TAG.REACT, POSTS_BY_TAG.ZUSTAND],
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!',
-    href: 'react-zustand-ts',
-    new: false,
-  },
-  {
-    id: 2,
-    title: 'Titulo del articulo',
-    date: 'Dec 3 - 2024',
-    tags: [POSTS_BY_TAG.REACT, POSTS_BY_TAG.ZUSTAND],
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!',
-    href: 'react-zustand-ts',
-    new: false,
-  },
-  {
     id: 1,
-    title: 'Titulo del articulo',
-    date: 'Dec 3 - 2024',
-    tags: [POSTS_BY_TAG.REACT, POSTS_BY_TAG.ZUSTAND],
+    title: 'Zustand VS Redux',
+    date: 'Dec 5 - 2024',
+    tags: [POSTS_BY_TAG.ZUSTAND, POSTS_BY_TAG.REDUX],
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!',
-    href: 'react-zustand',
-    new: false,
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!.',
+    href: 'zustand-vs-redux',
+    resume:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure voluptatum blanditiis doloribus laborum cum aperiam, magnam quasi ratione, inventore totam quae odit voluptatibus fuga. Nostrum distinctio ipsam ducimus animi!.',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6lf4AZFexY1dKZm9ovT3m0R7AuioL5O4gA&s',
+    new: true,
   },
 ];

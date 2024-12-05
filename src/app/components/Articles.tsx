@@ -10,9 +10,9 @@ export function Articles() {
           title={post.title}
           date={post.date}
           tags={post.tags}
-          description={post.description}
           href={post.href}
           state={post.new}
+          resume={post.resume}
         />
       ))}
     </section>
