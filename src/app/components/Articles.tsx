@@ -1,10 +1,14 @@
 import { POSTS } from '../lib/Posts';
 import { Article } from './Article';
 
-export function Articles() {
+export function Articles({ query }: { query: string }) {
+  const filteredPosts = POSTS.filter((post) =>
+    post.title.toLowerCase().includes(query.toLowerCase())
+  );
+
   return (
     <section className="grid grid-cols-2 gap-6 mt-20 max-w-[1000px] w-full mx-auto">
-      {POSTS.map((post) => (
+      {filteredPosts.map((post) => (
         <Article
           key={post.id}
           title={post.title}

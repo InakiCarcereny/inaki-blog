@@ -22,7 +22,12 @@ export default function ArticlePage({
             </span>
           </header>
 
-          <p className="text-white leading-6 text-base">{post.description}</p>
+          <p
+            className="text-white leading-6 text-base"
+            style={{ whiteSpace: 'pre-wrap' }}
+          >
+            {post.description}
+          </p>
 
           <img
             src={post.image}
