@@ -2,6 +2,7 @@ import { Tag } from './Tag';
 
 import { POSTS_BY_TAG } from '../lib/Posts';
 import Link from 'next/link';
+import { Calendar } from '@/app/icons/Calendar';
 
 interface ArticleProps {
   title: string;
@@ -28,7 +29,10 @@ export function Article({
       <div className="flex flex-col gap-4">
         <header className="flex flex-col gap-1">
           <div className="flex items-center justify-between">
-            <span className="text-[#a1a1a1] font-semibold text-sm">{date}</span>
+            <span className="text-[#a1a1a1] font-semibold text-sm flex items-center gap-2">
+              <Calendar className="w-5 h-5" />
+              {date}
+            </span>
             {state && <Tag />}
           </div>
           <h2 className="text-white font-bold text-2xl">{title}</h2>
