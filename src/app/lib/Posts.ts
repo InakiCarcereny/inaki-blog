@@ -78,7 +78,6 @@ Use Zustand if... you are looking for speed, simplicity or are working on a smal
     href: 'zustand-vs-redux',
     resume:
       'Redux or Zustand? Compare configuration, API, performance, and scalability to choose the best tool for your next app.',
-    image: '/assets/zustand-vs-redux.webp',
     new: true,
   },
 ];
