@@ -21,7 +21,7 @@ export default function ArticlePage({
             className="flex items-center gap-4 text-[#a1a1a1] text-sm hover:underline hover:underline-offset-1 hover:text-white"
           >
             <ArrowLeft />
-            Go back
+            Go back.
           </Link>
 
           <header className="flex items-center justify-between w-full">
