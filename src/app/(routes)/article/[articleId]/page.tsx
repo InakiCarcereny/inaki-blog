@@ -12,6 +12,8 @@ export default function ArticlePage({
 
   const filteredPosts = POSTS.filter((post) => post.href === articleId);
 
+  console.log(filteredPosts);
+
   return (
     <section className="max-w-[800px] mx-auto w-full h-full flex flex-col mt-10">
       {filteredPosts.map((post) => (
